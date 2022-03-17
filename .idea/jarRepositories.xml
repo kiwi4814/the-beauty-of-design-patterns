@@ -2,6 +2,16 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="yuanqu-snapshot" />
+      <option name="name" value="yuanqu" />
+      <option name="url" value="http://nexus.kedacom.com/content/repositories/yuanqu-snapshot/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="ctsp" />
+      <option name="name" value="ctsp" />
+      <option name="url" value="http://nexus.kedacom.com/content/groups/public/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public/" />
@@ -12,9 +22,19 @@
       <option name="url" value="https://repo1.maven.org/maven2" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="alibab" />
+      <option name="name" value="alibaba" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="yuanqu-release" />
+      <option name="name" value="yuanqu" />
+      <option name="url" value="http://nexus.kedacom.com/content/repositories/yuanqu-release/" />
     </remote-repository>
   </component>
 </project>
