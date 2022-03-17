@@ -1,7 +1,6 @@
-package com.geek.principle.solid.ocp;
+package com.geek.principle.solid.ocp.model;
 
 import com.geek.principle.solid.ocp.handler.AlertHandler;
-import com.geek.principle.solid.ocp.model.ApiStatInfo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,8 +8,9 @@ import java.util.List;
 public class Alert {
     private List<AlertHandler> alertHandlers = new ArrayList<>();
 
-    public Alert(List<AlertHandler> alertHandlers) {
-        this.alertHandlers = alertHandlers;
+
+    public void addAlertHandler(AlertHandler alertHandler) {
+        this.alertHandlers.add(alertHandler);
     }
 
     public void check(ApiStatInfo apiStatInfo) {
