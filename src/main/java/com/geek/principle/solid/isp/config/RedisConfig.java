@@ -1,7 +1,9 @@
-package com.geek.principle.solid.isp;
+package com.geek.principle.solid.isp.config;
 
 
-public class RedisConfig implements Updater{
+import com.geek.principle.solid.isp.config.inter.Updater;
+
+public class RedisConfig implements Updater {
     private ConfigSource configSource; //配置中心（比如zookeeper）
     private String address;
     private int timeout;

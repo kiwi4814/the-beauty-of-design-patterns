@@ -1,5 +1,7 @@
 package com.geek.principle.solid.isp;
 
+import com.geek.principle.solid.isp.config.inter.Updater;
+
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;

@@ -1,9 +1,12 @@
-package com.geek.principle.solid.isp;
+package com.geek.principle.solid.isp.config;
 
 
-public class KafkaConfig implements Updater {
+import com.geek.principle.solid.isp.config.inter.Updater;
+
+public class MySQLConfig implements Updater {
     private ConfigSource configSource; //配置中心（比如zookeeper）
-    public KafkaConfig(ConfigSource configSource) {
+
+    public MySQLConfig(ConfigSource configSource) {
         this.configSource = configSource;
     }
 

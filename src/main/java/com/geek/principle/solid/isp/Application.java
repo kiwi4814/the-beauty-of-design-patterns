@@ -1,5 +1,8 @@
 package com.geek.principle.solid.isp;
 
+import com.geek.principle.solid.isp.config.*;
+import com.geek.principle.solid.isp.config.ConfigSource;
+
 public class Application {
     static ConfigSource configSource = new ZookeeperConfigSource(/*省略参数*/);
     public static final RedisConfig redisConfig = new RedisConfig(configSource);
