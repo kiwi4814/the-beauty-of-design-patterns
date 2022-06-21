@@ -1,7 +1,7 @@
 package com.geek.design.patterns.singleton;
 
 public class LazyInitializedSingleton {
-    private static LazyInitializedSingleton instance;
+    private static volatile LazyInitializedSingleton instance;
 
     private LazyInitializedSingleton() {
     }

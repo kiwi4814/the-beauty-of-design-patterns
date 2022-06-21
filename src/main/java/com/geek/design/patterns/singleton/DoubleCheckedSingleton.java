@@ -11,14 +11,14 @@ public class DoubleCheckedSingleton {
     public static DoubleCheckedSingleton getInstance() {
         DoubleCheckedSingleton tempInstance = instance;
         if (null == tempInstance) {
-            synchronized (mutex) {
-                tempInstance = instance;
+            synchronized (DoubleCheckedSingleton.mutex) { // 这里加锁的为什么是mutex而不是DoubleCheckedSingleton.class？
+                tempInstance = instance; // 这里为什么要第二次赋值？
                 if (null == tempInstance) {
                     instance = tempInstance = new DoubleCheckedSingleton();
                 }
             }
         }
-        return tempInstance;
+        return tempInstance; // return出去的是临时变量
     }
 
 }
