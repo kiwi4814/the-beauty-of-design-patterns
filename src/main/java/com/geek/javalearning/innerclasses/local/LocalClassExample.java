@@ -1,4 +1,4 @@
-package com.geek.java8.classes;
+package com.geek.javalearning.innerclasses.local;
 
 public class LocalClassExample {
 
